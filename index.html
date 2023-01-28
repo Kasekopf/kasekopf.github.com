@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>Jeffrey Dudek</title>
+	<meta name="author" content="Jeffrey Dudek" />
+	<!--<link rel="stylesheet" type="text/css" href="css/basic-profile.css" title="Basic Profile" media="all" />-->
+	<link href="/css/bootstrap.min.css" rel="stylesheet">	
+	<link href="/css/custom.css" rel="stylesheet">
+	
+	  <!-- Support retina images. -->
+	  <script type="text/javascript"
+		src="/js/srcset-polyfill.js"></script>
+	  <!-- Bootstrap Javascript -->
+	  <script type="text/javascript" src="/js/jquery.js"></script>
+	  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+
+<div class="container">
+<div class="row">
+
+
+<!--Sidebar code comes here-->
+<div id="sidebar" class="col-md-3 col-md-push-8">
+<a href="index.html"><img src="img/Jeff.jpg" width="200" alt="Image" /></a>
+<div class="list-group" style="width:200px">
+<a href="index.html" class="list-group-item">Home</a>
+<a href="dudek_cv.pdf" class="list-group-item">CV</a>
+<a href="contact.html" class="list-group-item">Contact</a>
+</div>
+</div>
+
+<!-- Main body fits here-->
+<div class="col-md-offset-1 col-md-6 col-md-pull-3">
+<h2><a href="index.html">Jeffrey Dudek</a></h2>
+<p>I graduated with a PhD from the <a href="https://www.cs.rice.edu/about/">Department of Computer Science</a> at <a href="http://www.rice.edu/">Rice University</a> in August 2021, advised by <a href="http://www.cs.rice.edu/~vardi">Prof. Moshe Vardi</a>. I obtained a BS in Computer Science and a BA in Mathematics from Rice University as well.</p>
+
+My research interests are in:
+<li>Tensor Networks</li>
+<li>Constrained Counting and Sampling</li>
+<li>SAT Solving and Phase-Transition Phenomena</li>
+
+<p></p>
+
+<h3>Awards and Distinctions</h3>
+<li><a href="https://k2i.rice.edu/cray">Ken Kennedy Institute - Cray Inc. Graduate Fellowship</a>, 2017 &ndash; 2018</li>
+<li>NSF Graduate Research Fellowship (Honorable Mention), 2017</li>
+<li><a href="https://k2i.rice.edu/">Ken Kennedy Institute</a> Enhancement Fellowship, 2015 &ndash; 2019</li>
+<li>Trustee and LJ Walsh Scholarships, awarded by <a href="http://www.rice.edu/">Rice University</a>, 2011 &ndash; 2015</li>
+<li>Thomas J. Watson Memorial Scholarship, awarded by <a href="https://www.ibm.com/">IBM</a>, 2011 &ndash; 2015</li>
+<li>Zevi & Bertha Salsberg Award, awarded by Will Rice College, 2012</li>
+
+<h3>Publications</h3>
+
+<table class="table">
+<tbody>
+<tr>
+	<td class="publication">
+	<span class="pubtitle">
+		<font color="##3aac3a"><a href="https://scholarship.rice.edu/handle/1911/111217">Planning and Execution for Discrete Integration</a></font>
+	</span><br />
+		<span class="authors">
+		Jeffrey M. Dudek
+		</span><br />
+		<span class="venuetype"></span><span class="venue">PhD Thesis, Rice University, August 2021</span>.</br>
+		<button class="btn btn-default btn-xs" type="button" data-toggle="collapse" data-target="#abstract_D21">
+		abstract</button>
+		<button class="btn btn-default btn-xs" type="button" onClick='location.href="bib/D21.bib"'>
+		BibTex</button>
+		<button class="btn btn-default btn-xs" type="button" onClick='location.href="papers/dudek_phd_thesis.pdf"'>
+		PDF</button>
+		<div id="abstract_D21" class="abstract collapse">
+			Discrete integration is a fundamental problem in artificial intelligence with numerous applications, including probabilistic reasoning, planning, inexact computing,
+			engineering reliability, and statistical physics. The task is to count the total weight,
+			subject to a given weight function, of all solutions to given constraints. Developing
+			tools to compute the total weight for applied problems is an area of active research.
+			<br>Over the last ten years, hundreds of thousands of research hours have been poured
+			into low-level computational tools and compilers for neural network training and
+			inference. Simultaneously, there has been a surge in high-level reasoning tools based
+			on graph decompositions, spurred by several competitions. While some existing tools
+			for discrete integration (counters) tightly integrate with these low-level computational
+			or high-level reasoning tools, no existing counter is able to leverage both together.
+			<br>In this dissertation, we demonstrate that a clean separation of high-level reasoning
+			(planning) and low-level computation (execution) leads to scalable and more flexible
+			counters. Instead of building tightly on any particular tool, we target APIs that
+			can be fulfilled by multiple implementations. This requires novel theoretical and
+			algorithmic techniques to use existing high-level reasoning tools in a way consistent
+			with the options available in popular low-level computational libraries. The resulting
+			counters perform well in many hardware settings (singlecore, multicore, GPU).
+		</div>
+	</td>
+</tr>
+<tr>
+	<td class="publication">
+	<span class="pubtitle">
+		<font color="##3aac3a"><a href="papers/sat21_procount.pdf">ProCount: Weighted Projected Model Counting with Graded Project-Join Trees</a></font>
+	</span><br />
+		<span class="authors">
+		Jeffrey M. Dudek, Vu H.N. Phan, and Moshe Y. Vardi
+		</span><br />
+		<span class="venuetype"></span><span class="venue">Proceedings of International Conference on Theory and Applications of Satisfiability Testing (SAT),</span> <span>2021</span>.</br>
+		<button class="btn btn-default btn-xs" type="button" data-toggle="collapse" data-target="#abstract_DPV21">
+		abstract</button>
+		<button class="btn btn-default btn-xs" type="button" onClick='location.href="bib/DPV21.bib"'>
+		BibTex</button>
+		<button class="btn btn-default btn-xs" type="button" onClick='location.href="papers/sat21_procount.pdf"'>
+		PDF</button>
+		<button class="btn btn-default btn-xs" type="button" onClick='location.href="https://www.iiia.csic.es/sat2021/program/Presentation14.mp4"'>
+		Talk</button>
+		<button class="btn btn-default btn-xs" type="button" onClick='location.href="slides/procount_sat.pdf"'>
+		Slides</button>
+		<button class="btn btn-default btn-xs" type="button" onClick='location.href="https://github.com/vardigroup/DPMC"'>
+		Code</button>
+		<div id="abstract_DPV21" class="abstract collapse">
+			Recent work in weighted model counting proposed a unifying framework for dynamic-programming algorithms. The core of this framework is a project-join tree: an execution  plan that specifies how Boolean variables are eliminated. We adapt this framework to compute exact literal-weighted projected model counts of propositional formulas in  conjunctive normal form. Our key conceptual contribution is to define gradedness on project-join trees, a novel condition requiring irrelevant variables to be eliminated before relevant variables. We prove that building graded project-join trees can be reduced to building standard project-join trees and that graded project-join trees can be used to compute projected model counts. The resulting tool ProCount is competitive with the state-of-the-art tools D4P, projMC, and reSSAT, achieving the shortest solving time on 131 benchmarks of 390 benchmarks solved by at least one tool, from 849 benchmarks in total.
+		</div>
+	</td>
+</tr>
+<tr>
+	<td class="publication">
+	<span class="pubtitle">
+		<font color="##3aac3a"><a href="https://arxiv.org/pdf/2010.10724.pdf">Taming Discrete Integration via the Boon of Dimensionality</a></font>
+	</span><br />
+		<span class="authors">
+		Jeffrey M. Dudek, Dror Fried, and Kuldeep S. Meel
+		</span><br />
+		<span class="venuetype"></span><span class="venue">Proceedings of Neural Information Processing Systems (NeurIPS),</span> <span>2020</span>.</br>
+		<button class="btn btn-default btn-xs" type="button" data-toggle="collapse" data-target="#abstract_DFM20">
+		abstract</button>
+		<button class="btn btn-default btn-xs" type="button" onClick='location.href="bib/DFM20.bib"'>
+		BibTex</button>
+		<button class="btn btn-default btn-xs" type="button" onClick='location.href="https://arxiv.org/pdf/2010.10724.pdf"'>
+		PDF</button>
+		<button class="btn btn-default btn-xs" type="button" onClick='location.href="https://videos.neurips.cc/video/slideslive-38936911"'>
+		Talk</button>
+		<button class="btn btn-default btn-xs" type="button" onClick='location.href="slides/deweight_neurips.pdf"'>
+		Slides</button>
+		<button class="btn btn-default btn-xs" type="button" onClick='location.href="slides/deweight_neurips_poster.pdf"'>
+		Poster</button>
+		<button class="btn btn-default btn-xs" type="button" onClick='location.href="https://github.com/meelgroup/deweight"'>
+		Code</button>
+		<div id="abstract_DFM20" class="abstract collapse">
+			Discrete integration is a fundamental problem in computer science that concerns the computation of discrete sums over exponentially large sets. Despite intense interest from researchers for over three decades, the design of scalable techniques for computing estimates with rigorous guarantees for discrete integration remains the holy grail. The key contribution of this work addresses this scalability challenge via an efficient reduction of discrete integration to model counting. The proposed reduction is achieved via a significant increase in the dimensionality that, contrary to conventional wisdom, leads to solving an instance of the relatively simpler problem of model counting.<br>
+			Building on the promising approach proposed by Chakraborty et al, our work overcomes the key weakness of their approach: a restriction to dyadic weights. We augment our proposed reduction, called DeWeight, with a state of the art efficient approximate model counter and perform detailed empirical analysis over benchmarks arising from neural network verification domains, an emerging application area of critical importance. DeWeight, to the best of our knowledge, is the first technique to compute estimates with provable guarantees for this class of benchmarks.
+		</div>
+	</td>
+</tr>
+<tr>
+	<td class="publication">
+	<span class="pubtitle">
+		<font color="##3aac3a"><a href="https://arxiv.org/pdf/2008.08748.pdf">DPMC: Weighted Model Counting by Dynamic Programming on Project-Join Trees</a></font>
+	</span><br />
+		<span class="authors">
+		Jeffrey M. Dudek, Vu H.N. Phan, and Moshe Y. Vardi
+		</span><br />
+		<span class="venuetype"></span><span class="venue">Proceedings of International Conference on Principles and Practice of Constraint Programming (CP),</span> <span>2020</span>.</br>
+		<button class="btn btn-default btn-xs" type="button" data-toggle="collapse" data-target="#abstract_DPV20_2">
+		abstract</button>
+		<button class="btn btn-default btn-xs" type="button" onClick='location.href="bib/DPV20_2.bib"'>
+		BibTex</button>
+		<button class="btn btn-default btn-xs" type="button" onClick='location.href="https://arxiv.org/pdf/2008.08748.pdf"'>
+		PDF</button>
+		<button class="btn btn-default btn-xs" type="button" onClick='location.href="https://github.com/vardigroup/DPMC"'>
+		Code</button>
+		<div id="abstract_DPV20_2" class="abstract collapse">
+			We propose a unifying dynamic-programming framework to compute exact literal-weighted model counts of formulas in conjunctive normal form. At the center of our framework are project-join trees, which specify efficient project-join orders to apply additive projections (variable eliminations) and joins (clause multiplications). In this framework, model counting is performed in two phases. First, the planning phase constructs a project-join tree from a formula. Second, the execution phase computes the model count of the formula, employing dynamic programming as guided by the project-join tree. We empirically evaluate various methods for the planning phase and compare constraint-satisfaction heuristics with tree-decomposition tools. We also investigate the performance of different data structures for the execution phase and compare algebraic decision diagrams with tensors. We show that our dynamic-programming model-counting framework DPMC is competitive with the state-of-the-art exact weighted model counters cachet, c2d, d4, and miniC2D.
+		</div>
+	</td>
+</tr>
+<tr>
+<tr>
+	<td class="publication">
+	<span class="pubtitle">
+		<font color="##3aac3a"><a href="https://arxiv.org/pdf/2006.15512.pdf">Parallel Weighted Model Counting with Tensor Networks</a></font>
+	</span><br />
+		<span class="authors">
+		Jeffrey M. Dudek, Moshe Y. Vardi
+		</span><br />
+		<span class="venuetype"></span><span class="venue">Proceedings of SAT Workshop on Model Counting (MCW),</span> <span>2020</span>.</br>
+		<button class="btn btn-default btn-xs" type="button" data-toggle="collapse" data-target="#abstract_DV20">
+		abstract</button>
+		<button class="btn btn-default btn-xs" type="button" onClick='location.href="bib/DV20.bib"'>
+		BibTex</button>
+		<button class="btn btn-default btn-xs" type="button" onClick='location.href="https://arxiv.org/pdf/2006.15512.pdf"'>
+		PDF</button>
+		<button class="btn btn-default btn-xs" type="button" onClick='location.href="https://www.youtube.com/watch?v=GXPCLnTBYDk"'>
+		Talk</button>
+		<button class="btn btn-default btn-xs" type="button" onClick='location.href="slides/mcw_parallel_tensor_networks.pdf"'>
+		Slides</button>
+		<button class="btn btn-default btn-xs" type="button" onClick='location.href="https://github.com/vardigroup/TensorOrder"'>
+		Code</button>
+		<div id="abstract_DV20" class="abstract collapse">
+			A promising new algebraic approach to weighted model counting makes use of tensor networks, following a reduction from weighted model counting to tensor-network contraction. Prior work has focused on analyzing the single-core performance of this approach, and demonstrated that it is an effective addition to the current portfolio of weighted-model-counting algorithms.<br>
+			In this work, we explore the impact of multi-core and GPU use on tensor-network contraction for weighted model counting. To leverage multiple cores, we implement a parallel portfolio of tree-decomposition solvers to find an order to contract tensors. To leverage a GPU, we use TensorFlow to perform the contractions. We compare the resulting weighted model counter on 1914 standard weighted model counting benchmarks and show that it significantly improves the virtual best solver.
+		</div>
+	</td>
+</tr>
+<tr>
+<td class="publication">
+<span class="pubtitle">
+	<font color="##3aac3a"><a href="https://arxiv.org/pdf/1907.05000.pdf">ADDMC: Weighted Model Counting with Algebraic Decision Diagrams</a></font>
+</span><br />
+	<span class="authors">
+	Jeffrey M. Dudek, Vu H.N. Phan, and Moshe Y. Vardi
+	</span><br />
+	<span class="venuetype"></span><span class="venue">Proceedings of AAAI Conference on Artificial Intelligence (AAAI),</span> <span>2020</span>.</br>
+	<button class="btn btn-default btn-xs" type="button" data-toggle="collapse" data-target="#abstract_DPV20">
+	abstract</button>
+	<button class="btn btn-default btn-xs" type="button" onClick='location.href="bib/DPV20.bib"'>
+	BibTex</button>
+	<button class="btn btn-default btn-xs" type="button" onClick='location.href="https://arxiv.org/pdf/1907.05000.pdf"'>
+	PDF</button>
+	<button class="btn btn-default btn-xs" type="button" onClick='location.href="https://github.com/vardigroup/ADDMC"'>
+	Code</button>
+	<div id="abstract_DPV20" class="abstract collapse">
+	We present an algorithm to compute exact literal-weighted model counts of Boolean formulas in Conjunctive Normal Form. Our algorithm employs dynamic programming and uses Algebraic Decision Diagrams as the primary data structure. We implement this technique in ADDMC, a new model counter. We empirically evaluate various heuristics that can be used with ADDMC. We then compare ADDMC to state-of-the-art exact weighted model counters (Cachet, c2d, d4, and miniC2D) on 1914 standard model counting benchmarks and show that ADDMC significantly improves the virtual best solver.
+	</div>
+</td>
+</tr>
+<tr>
+<td class="publication">
+<span class="pubtitle">
+	<font color="##3aac3a"><a href="http://drops.dagstuhl.de/opus/volltexte/2019/11601/pdf/LIPIcs-FSTTCS-2019-39.pdf">Transformations of Boolean Functions</a></font>
+</span><br />
+	<span class="authors">
+	Jeffrey M. Dudek, Dror Fried
+	</span><br />
+	<span class="venuetype"></span><span class="venue">Proceedings of Foundations of Software Technology and Theoretical Computer Science (FSTTCS),</span> <span>2019</span>.</br>
+	<button class="btn btn-default btn-xs" type="button" data-toggle="collapse" data-target="#abstract_DF19">
+	abstract</button>
+	<button class="btn btn-default btn-xs" type="button" onClick='location.href="bib/DF19.bib"'>
+	BibTex</button>
+	<button class="btn btn-default btn-xs" type="button" onClick='location.href="http://drops.dagstuhl.de/opus/volltexte/2019/11601/pdf/LIPIcs-FSTTCS-2019-39.pdf"'>
+	PDF</button>
+	<div id="abstract_DF19" class="abstract collapse">
+	Boolean functions are characterized by the unique structure of their solution space. Some properties of the solution space, such as the possible existence of a solution, are well sought after but difficult to obtain. To better reason about such properties, we define transformations as functions that change one Boolean function to another while maintaining some properties of the solution space. We explore transformations of Boolean functions, compactly described as Boolean formulas, where the property is to maintain is the number of solutions in the solution spaces. We first discuss general characteristics of such transformations. Next, we reason about the computational complexity of transforming one Boolean formula to another. Finally, we demonstrate the versatility of transformations by extensively discussing transformations of Boolean formulas to "blocks," which are solution spaces in which the set of solutions makes a prefix of the solution space under a lexicographic order of the variables.
+	</div>
+</td>
+</tr>
+<tr>
+	<td class="publication">
+	<span class="pubtitle">
+		<font color="##3aac3a"><a href="https://arxiv.org/pdf/1908.04381">Efficient Contraction of Large Tensor Networks for Weighted Model Counting through Graph Decompositions</a></font>
+	</span><br />
+		<span class="authors">
+		Jeffrey M. Dudek, Leonardo Dueñas-Osorio, Moshe Y. Vardi
+		</span><br />
+		<span class="venuetype"></span><span class="venue">(Preprint) Submitted to Artificial Intelligence Journal,</span> <span>2019</span>.</br>
+		<button class="btn btn-default btn-xs" type="button" data-toggle="collapse" data-target="#abstract_DDV19">
+		abstract</button>
+		<button class="btn btn-default btn-xs" type="button" onClick='location.href="bib/DDV19.bib"'>
+		BibTex</button>
+		<button class="btn btn-default btn-xs" type="button" onClick='location.href="https://arxiv.org/pdf/1908.04381"'>
+		PDF</button>
+		<button class="btn btn-default btn-xs" type="button" onClick='location.href="https://github.com/vardigroup/TensorOrder/releases/tag/v1.0.0"'>
+		Code</button>
+		<div id="abstract_DDV19" class="abstract collapse">
+			Constrained counting is a fundamental problem in artificial intelligence. A promising new algebraic approach to constrained counting makes use of tensor networks, following a reduction from constrained counting to the problem of tensor-network contraction. Contracting a tensor network efficiently requires determining an efficient order to contract the tensors inside the network, which is itself a difficult problem.<br>
+			In this work, we apply graph decompositions to find contraction orders for tensor networks. We prove that finding an efficient contraction order for a tensor network is equivalent to the well-known problem of finding an optimal carving decomposition. Thus memory-optimal contraction orders for planar tensor networks can be found in cubic time. We show that tree decompositions can be used both to find carving decompositions and to factor tensor networks with high-rank, structured tensors.<br>
+			We implement these algorithms on top of state-of-the-art solvers for tree decompositions and show empirically that the resulting weighted model counter is quite effective and useful as part of a portfolio of counters.
+	</div>
+	</td>
+</tr>
+<tr>
+<td class="publication">
+<span class="pubtitle">
+	<font color="##3aac3a"><a href="https://scholarship.rice.edu/handle/1911/96156">Random CNF-XOR Formulas</a></font>
+</span><br />
+	<span class="authors">
+	Jeffrey M. Dudek
+	</span><br />
+	<span class="venuetype"></span><span class="venue">Masters Thesis, Rice University, April 2017</span>.</br>
+	<button class="btn btn-default btn-xs" type="button" data-toggle="collapse" data-target="#abstract_D17">
+	abstract</button>
+	<button class="btn btn-default btn-xs" type="button" onClick='location.href="bib/D17.bib"'>
+	BibTex</button>
+	<button class="btn btn-default btn-xs" type="button" onClick='location.href="https://scholarship.rice.edu/handle/1911/96156"'>
+	PDF</button>
+	<div id="abstract_D17" class="abstract collapse">
+	Boolean Satisfiability (SAT) is fundamental in many diverse areas such as artificial intelligence, formal verification, and biology. Recent universal-hashing based approaches to the problems of sampling and counting crucially depend on the runtime performance of specialized SAT solvers on formulas expressed as the conjunction of both k-CNF constraints and variable-width XOR constraints (known as CNF-XOR formulas), but random CNF-XOR formulas are unexplored in prior work. In this work, we present the first study of random CNF-XOR formulas. We prove that a phase-transition in the satisfiability of random CNF-XOR formulas exists for k=2 and (when the number of k-CNF constraints is small) for k>2. We empirically demonstrate that a state-of-the-art SAT solver scales exponentially on random CNF-XOR formulas across many clause densities, peaking around the empirical phase-transition location. Finally, we prove that the solution space of random CNF-XOR formulas 'shatters' at all nonzero XOR-clause densities into well-separated components.
+	</div>
+</td></tr>
+<tr>
+<td class="publication">
+<span class="pubtitle">
+	<font color="##3aac3a"><a href="papers/ijcai17_cnfxor.pdf">The Hard Problems Are Almost Everywhere For Random CNF-XOR Formulas</a></font>
+</span><br />
+	<span class="authors">
+	Jeffrey M. Dudek, Kuldeep S. Meel, and Moshe Y. Vardi
+	</span><br />
+	<span class="venuetype"></span><span class="venue">Proceedings of International Joint Conference on Artificial Intelligence (IJCAI),</span> <span>2017</span>.</br>
+	<button class="btn btn-default btn-xs" type="button" data-toggle="collapse" data-target="#abstract_DMV17">
+	abstract</button>
+	<button class="btn btn-default btn-xs" type="button" onClick='location.href="bib/DMV17.bib"'>
+	BibTex</button>
+	<button class="btn btn-default btn-xs" type="button" onClick='location.href="papers/ijcai17_cnfxor.pdf"'>
+	PDF</button>
+	<button class="btn btn-default btn-xs" type="button" onClick='location.href="http://www.cs.rice.edu/CS/Verification/Projects/"'>
+	Code</button>	
+	<div id="abstract_DMV17" class="abstract collapse">
+	Recent universal-hashing based approaches to sampling and counting crucially depend on the runtime performance of SAT solvers on formulas expressed as the conjunction of both CNF constraints and variable-width XOR constraints (known as CNF-XOR formulas). In this paper, we present the first study of the runtime behavior of SAT solvers equipped with XOR-reasoning techniques on random CNF-XOR formulas. We empirically demonstrate that a state-of-the-art SAT solver scales exponentially on random CNF-XOR formulas across a wide range of XOR-clause densities, peaking around the empirical phase-transition location. On the theoretical front, we prove that the solution space of a random CNF-XOR formula 'shatters' at all nonzero XOR-clause densities into well-separated components, similar to the behavior seen in random CNF formulas known to be difficult for many SAT algorithms.
+	</div>	
+</td>
+</tr>
+<tr>
+<td class="publication">
+<span class="pubtitle">
+	<font color="##3aac3a"><a href="papers/ijcai16_cnfxor.pdf">Combining the k-CNF and XOR Phase-Transitions</a></font>
+</span><br />
+	<span class="authors">
+	Jeffrey M. Dudek, Kuldeep S. Meel, and Moshe Y. Vardi
+	</span><br />
+	<span class="venuetype"></span><span class="venue">Proceedings of International Joint Conference on Artificial Intelligence (IJCAI),</span> <span>2016</span>.</br>
+	<button class="btn btn-default btn-xs" type="button" data-toggle="collapse" data-target="#abstract_DMV16">
+	abstract</button>
+	<button class="btn btn-default btn-xs" type="button" onClick='location.href="bib/DMV16.bib"'>
+	BibTex</button>
+	<button class="btn btn-default btn-xs" type="button" onClick='location.href="papers/ijcai16_cnfxor.pdf"'>
+	PDF</button>
+	<button class="btn btn-default btn-xs" type="button" onClick='location.href="http://www.cs.rice.edu/CS/Verification/Projects/CUSP/IJCAI16/"'>
+	Code</button>
+	<div id="abstract_DMV16" class="abstract collapse">
+	The runtime performance of modern SAT solvers on random k-CNF formulas is deeply connected with the `phase-transition&#39; phenomenon seen empirically in the satisfiability of random k-CNF formulas. Recent universal hashing-based approaches to sampling and counting crucially depend on the runtime performance of SAT solvers on formulas expressed as the conjunction of both k-CNF and XOR constraints (known as k-CNF-XOR formulas), but the behavior of random k-CNF-XOR formulas is unexplored in prior work. In this paper, we present the first study of the satisfiability of random k-CNF-XOR formulas. We show empirical evidence of a surprising phase-transition that follows a linear trade-off between k-CNF and XOR constraints. Furthermore, we prove that a phase-transition for k-CNF-XOR formulas exists for k = 2 and (when the number of k-CNF constraints is small) for k &gt; 2.
+	</div>
+</td>
+</tr>
+</tbody>
+</table>	
+The names of authors are sorted alphabetically and the order does not reflect contribution.
+</div>
+</div>
+</div>
+	</body>
+</html>
